@@ -3,18 +3,26 @@ from requests.structures import CaseInsensitiveDict
 import time
 from urllib.parse import urljoin
 from bs4 import BeautifulSoup
-from ../urls import urls
+from bots.selenium_driver import SeleniumDriver
 
-while True:
+def neweggStockCheck(url):
+    source = urllib.request.urlopen(url).read()
+
+    sauce = BeautifulSoup(source, "lxml")
+
+
+def bestbuyStockCheck(url):
+    source = requests.get(url).content
+    print('This is the source: ', source)
+
+
+    sauce = BeautifulSoup(source, "lxml")
+    print('this is the sauce: ', sauce)
+           
+def check(urls):
     for url in urls:
-        if url.lower().contains("newegg"):
-            available = neweggStockCheck(url)
-        elif url.lower().contains("bestbuy"):
-            available = bestbuyStockStock(url)
-
-        if 
-
-
-
-
-
+        if 'newegg' in url.lower():
+            print('this is a newegg link')
+        elif 'bestbuy' in url.lower():
+            print('this is a bestbuy link')
+            bestbuyStockCheck(url)

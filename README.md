@@ -8,9 +8,13 @@ Use pipenv package mananger to install everything needed for the project
 pipenv install
 ```
 
-##Usage
+## Usage
+I want to run this python script on a server so it can 24/7.
 
-!TODO
+why?
+
+Because graphics cards can drop at anytime without warning, so it needs to be prepared at all times.
+
 
 ## Contributing 
 
