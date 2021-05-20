@@ -1,1 +1,0 @@
-urls = ["https://www.bestbuy.com/site/nvidia-geforce-rtx-3070-8gb-gddr6-pci-express-4-0-graphics-card-dark-platinum-and-black/6429442.p?skuId=6429442", "https://www.bestbuy.com/site/acer-predator-triton-300-se-14-144hz-laptop-intel-11th-gen-i7-nvidia-geforce-rtx-3060-16gb-ddr4-512gb-ssd/6455816.p?skuId=6455816"] 

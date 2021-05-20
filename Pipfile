@@ -9,6 +9,7 @@ bs4 = "*"
 selenium = "*"
 lxml = "*"
 webdriver-manager = "*"
+scrapy = "*"
 
 [dev-packages]
 
