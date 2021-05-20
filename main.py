@@ -1,8 +1,15 @@
-from data.urls import urls
-from scrapers.stock_check import check
+import scrapy
+from scrapy.crawler import CrawlerProcess
+import re
+from termcolor import colored
+from gpu_bot.spiders.stock_check import stockCheckSpider 
 
-print(urls)
+def main():
+    process = CrawlerProcess()
+    process.crawl(stockCheckSpider)
+    
+    data = process.start()
+    print(colored(data, 'red'))
 
-print('starting')
-check(urls)
-print('finished')
+if __name__ == '__main__':
+    main()
