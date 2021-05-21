@@ -9,7 +9,10 @@ def main():
     process.crawl(stockCheckSpider)
     
     data = process.start()
-    print(colored(data, 'red'))
+
+    with open('gamestop_stock.json', 'r+') as stock:
+        print(colored(stock.readlines()[1], 'blue'))
+        stock.truncate(0)
 
 if __name__ == '__main__':
     main()
