@@ -1,13 +1,14 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from termcolor import colored
-from gpu_bot.spiders.stock_check import stockCheckSpider 
+from gpu_bot.spiders.stock_check import stockCheckSpider, bestbuyCheckSpider 
 import time
 
 
 def main():
     process  = CrawlerProcess()
     process.crawl(stockCheckSpider)
+    process.crawl(bestbuyCheckSpider)
     process.start()
 
     with open('gamestop_stock.json', 'r+') as stock:
