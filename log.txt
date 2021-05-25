@@ -1,0 +1,1291 @@
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 9d7937d739981327
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 72105,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.931021,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 23, 1, 426181),
+ 'httpcompression/response_bytes': 625692,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 23, 0, 495160)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:55570/session/780d6ae81403f956fd8a670b7881c6d0/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:55570 "POST /session/780d6ae81403f956fd8a670b7881c6d0/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:55570/session/780d6ae81403f956fd8a670b7881c6d0/source {}
+DEBUG: http://127.0.0.1:55570 "GET /session/780d6ae81403f956fd8a670b7881c6d0/source HTTP/1.1" 200 625403
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:55570/session/780d6ae81403f956fd8a670b7881c6d0/window {}
+DEBUG: http://127.0.0.1:55570 "DELETE /session/780d6ae81403f956fd8a670b7881c6d0/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 6f3adc17e9096076
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 72105,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.778547,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 27, 54, 96093),
+ 'httpcompression/response_bytes': 625692,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 27, 53, 317546)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:55943/session/74fe168cc36ecd3495d910eb185e0226/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:55943 "POST /session/74fe168cc36ecd3495d910eb185e0226/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:55943/session/74fe168cc36ecd3495d910eb185e0226/source {}
+DEBUG: http://127.0.0.1:55943 "GET /session/74fe168cc36ecd3495d910eb185e0226/source HTTP/1.1" 200 632725
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:55943/session/74fe168cc36ecd3495d910eb185e0226/window {}
+DEBUG: http://127.0.0.1:55943 "DELETE /session/74fe168cc36ecd3495d910eb185e0226/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 6554b100f1864bd0
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 72105,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.726228,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 31, 31, 80489),
+ 'httpcompression/response_bytes': 625692,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 31, 30, 354261)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:56243/session/91555a27b8f05bee3d988e28b1114533/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:56243 "POST /session/91555a27b8f05bee3d988e28b1114533/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:56243/session/91555a27b8f05bee3d988e28b1114533/source {}
+DEBUG: http://127.0.0.1:56243 "GET /session/91555a27b8f05bee3d988e28b1114533/source HTTP/1.1" 200 624318
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:56243/session/91555a27b8f05bee3d988e28b1114533/window {}
+DEBUG: http://127.0.0.1:56243 "DELETE /session/91555a27b8f05bee3d988e28b1114533/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 754a9c2c0dd4b174
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 72105,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.668595,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 34, 7, 456305),
+ 'httpcompression/response_bytes': 625692,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 34, 6, 787710)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:56481/session/4358f364726edf9e1bbe8b50419c725a/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:56481 "POST /session/4358f364726edf9e1bbe8b50419c725a/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:56481/session/4358f364726edf9e1bbe8b50419c725a/source {}
+DEBUG: http://127.0.0.1:56481 "GET /session/4358f364726edf9e1bbe8b50419c725a/source HTTP/1.1" 200 627839
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:56481/session/4358f364726edf9e1bbe8b50419c725a/window {}
+DEBUG: http://127.0.0.1:56481 "DELETE /session/4358f364726edf9e1bbe8b50419c725a/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: cad6cc4050b9e825
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 72105,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.739912,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 36, 0, 666906),
+ 'httpcompression/response_bytes': 625692,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 35, 59, 926994)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:56688/session/42df3db464626c0408fa20ba3e199f2c/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:56688 "POST /session/42df3db464626c0408fa20ba3e199f2c/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:56688/session/42df3db464626c0408fa20ba3e199f2c/source {}
+DEBUG: http://127.0.0.1:56688 "GET /session/42df3db464626c0408fa20ba3e199f2c/source HTTP/1.1" 200 627639
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:56688/session/42df3db464626c0408fa20ba3e199f2c/window {}
+DEBUG: http://127.0.0.1:56688 "DELETE /session/42df3db464626c0408fa20ba3e199f2c/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 06fd7f7e2b6b7052
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 74800,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.325796,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 37, 32, 890540),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 37, 31, 564744)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:56871/session/eb0142a95d354f3df819d7b43c722f27/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:56871 "POST /session/eb0142a95d354f3df819d7b43c722f27/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:56871/session/eb0142a95d354f3df819d7b43c722f27/source {}
+DEBUG: http://127.0.0.1:56871 "GET /session/eb0142a95d354f3df819d7b43c722f27/source HTTP/1.1" 200 628927
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:56871/session/eb0142a95d354f3df819d7b43c722f27/window {}
+DEBUG: http://127.0.0.1:56871 "DELETE /session/eb0142a95d354f3df819d7b43c722f27/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: ad1070008b59f614
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71973,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.70947,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 41, 5, 627508),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 41, 4, 918038)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:57155/session/df98666196ccbf1dac1f4d97ffa45877/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:57155 "POST /session/df98666196ccbf1dac1f4d97ffa45877/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:57155/session/df98666196ccbf1dac1f4d97ffa45877/source {}
+DEBUG: http://127.0.0.1:57155 "GET /session/df98666196ccbf1dac1f4d97ffa45877/source HTTP/1.1" 200 674905
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:57155/session/df98666196ccbf1dac1f4d97ffa45877/window {}
+DEBUG: http://127.0.0.1:57155 "DELETE /session/df98666196ccbf1dac1f4d97ffa45877/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 725cd0f151d36aeb
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71973,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.726218,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 44, 10, 628734),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 44, 9, 902516)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:57400/session/bb85072f532709548cadefae7d95af12/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:57400 "POST /session/bb85072f532709548cadefae7d95af12/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:57400/session/bb85072f532709548cadefae7d95af12/source {}
+DEBUG: http://127.0.0.1:57400 "GET /session/bb85072f532709548cadefae7d95af12/source HTTP/1.1" 200 674790
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:57400/session/bb85072f532709548cadefae7d95af12/window {}
+DEBUG: http://127.0.0.1:57400 "DELETE /session/bb85072f532709548cadefae7d95af12/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 4ca716dd7a571cf4
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71974,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.769736,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 45, 39, 179635),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 45, 38, 409899)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:57606/session/519b12cb23489be767afb08eb6e3924b/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:57606 "POST /session/519b12cb23489be767afb08eb6e3924b/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:57606/session/519b12cb23489be767afb08eb6e3924b/source {}
+DEBUG: http://127.0.0.1:57606 "GET /session/519b12cb23489be767afb08eb6e3924b/source HTTP/1.1" 200 644368
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:57606/session/519b12cb23489be767afb08eb6e3924b/window {}
+DEBUG: http://127.0.0.1:57606 "DELETE /session/519b12cb23489be767afb08eb6e3924b/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 8eff2a9b07aa34d3
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 74768,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 1.849964,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 46, 54, 385239),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 46, 52, 535275)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:57746/session/2757218c0e976294137afa02958ba9c1/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:57746 "POST /session/2757218c0e976294137afa02958ba9c1/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:57746/session/2757218c0e976294137afa02958ba9c1/source {}
+DEBUG: http://127.0.0.1:57746 "GET /session/2757218c0e976294137afa02958ba9c1/source HTTP/1.1" 200 643802
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:57746/session/2757218c0e976294137afa02958ba9c1/window {}
+DEBUG: http://127.0.0.1:57746 "DELETE /session/2757218c0e976294137afa02958ba9c1/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 0b37f528f6b96f27
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71942,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.740518,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 47, 40, 226106),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 47, 39, 485588)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:57926/session/57bf8d347f237cd9fdd78768a144ef28/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:57926 "POST /session/57bf8d347f237cd9fdd78768a144ef28/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:57926/session/57bf8d347f237cd9fdd78768a144ef28/source {}
+DEBUG: http://127.0.0.1:57926 "GET /session/57bf8d347f237cd9fdd78768a144ef28/source HTTP/1.1" 200 634646
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:57926/session/57bf8d347f237cd9fdd78768a144ef28/window {}
+DEBUG: http://127.0.0.1:57926 "DELETE /session/57bf8d347f237cd9fdd78768a144ef28/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: bf63b75cbede8bb4
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71942,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.916667,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 48, 19, 742848),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 48, 18, 826181)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:58078/session/11ce7994df4a8b833057f98bb1559463/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:58078 "POST /session/11ce7994df4a8b833057f98bb1559463/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:58078/session/11ce7994df4a8b833057f98bb1559463/source {}
+DEBUG: http://127.0.0.1:58078 "GET /session/11ce7994df4a8b833057f98bb1559463/source HTTP/1.1" 200 600117
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:58078/session/11ce7994df4a8b833057f98bb1559463/window {}
+DEBUG: http://127.0.0.1:58078 "DELETE /session/11ce7994df4a8b833057f98bb1559463/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 58d802d251ee146a
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71942,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.897004,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 48, 57, 277786),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 48, 56, 380782)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:58256/session/48000e75f6b76c4f64ae09b7221a3f36/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:58256 "POST /session/48000e75f6b76c4f64ae09b7221a3f36/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:58256/session/48000e75f6b76c4f64ae09b7221a3f36/source {}
+DEBUG: http://127.0.0.1:58256 "GET /session/48000e75f6b76c4f64ae09b7221a3f36/source HTTP/1.1" 200 608103
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:58256/session/48000e75f6b76c4f64ae09b7221a3f36/window {}
+DEBUG: http://127.0.0.1:58256 "DELETE /session/48000e75f6b76c4f64ae09b7221a3f36/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 03a65b0edd8f4c31
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71942,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.751989,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 50, 0, 268565),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 49, 59, 516576)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:58473/session/448e4387175081095200a21a48c7e281/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:58473 "POST /session/448e4387175081095200a21a48c7e281/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:58473/session/448e4387175081095200a21a48c7e281/source {}
+DEBUG: http://127.0.0.1:58473 "GET /session/448e4387175081095200a21a48c7e281/source HTTP/1.1" 200 612000
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:58473/session/448e4387175081095200a21a48c7e281/window {}
+DEBUG: http://127.0.0.1:58473 "DELETE /session/448e4387175081095200a21a48c7e281/window HTTP/1.1" 200 12
+DEBUG: Finished Request
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: 4951febb75ee77be
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71941,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.813608,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 55, 25, 135546),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 55, 24, 321938)}
+INFO: Spider closed (finished)
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: e45352caeb8e5042
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71942,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.858993,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 58, 45, 687502),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 58, 44, 828509)}
+INFO: Spider closed (finished)
+INFO: 
+
+INFO: ====== WebDriver manager ======
+INFO: Current google-chrome version is 90.0.4430
+INFO: Get LATEST driver version for 90.0.4430
+INFO: Driver [C:\Users\EKriegel\.wdm\drivers\chromedriver\win32\90.0.4430.24\chromedriver.exe] found in cache
+INFO: Scrapy 2.5.0 started (bot: scrapybot)
+INFO: Versions: lxml 4.6.3.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.9.4 (tags/v3.9.4:1f2e308, Apr  4 2021, 13:27:16) [MSC v.1928 64 bit (AMD64)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Windows-10-10.0.19041-SP0
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Overridden settings:
+{'FEED_EXPORT_ENCODING': 'utf-8'}
+INFO: Telnet Password: da5a65fb2c873f2c
+WARNING: C:\Users\EKriegel\.virtualenvs\gpu_bot-kj3Py-Pj\lib\site-packages\scrapy\extensions\feedexport.py:247: ScrapyDeprecationWarning: The `FEED_URI` and `FEED_FORMAT` settings have been deprecated in favor of the `FEEDS` setting. Please see the `FEEDS` setting docs for more details
+  exporter = cls(crawler)
+
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3060&lang=default> (referer: None)
+DEBUG: Crawled (200) <GET https://www.gamestop.com/search/?q=3070&lang=default> (referer: None)
+INFO: Closing spider (finished)
+INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 486,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 71942,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 2,
+ 'elapsed_time_seconds': 0.897004,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 25, 17, 59, 4, 509700),
+ 'httpcompression/response_bytes': 625472,
+ 'httpcompression/response_count': 2,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2021, 5, 25, 17, 59, 3, 612696)}
+INFO: Spider closed (finished)
+DEBUG: POST http://127.0.0.1:59143/session/c7e91c6c6e91ce1c513a90f2d82048d9/url {"url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti"}
+DEBUG: http://127.0.0.1:59143 "POST /session/c7e91c6c6e91ce1c513a90f2d82048d9/url HTTP/1.1" 200 14
+DEBUG: Finished Request
+DEBUG: GET http://127.0.0.1:59143/session/c7e91c6c6e91ce1c513a90f2d82048d9/source {}
+DEBUG: http://127.0.0.1:59143 "GET /session/c7e91c6c6e91ce1c513a90f2d82048d9/source HTTP/1.1" 200 624183
+DEBUG: Finished Request
+DEBUG: DELETE http://127.0.0.1:59143/session/c7e91c6c6e91ce1c513a90f2d82048d9/window {}
+DEBUG: http://127.0.0.1:59143 "DELETE /session/c7e91c6c6e91ce1c513a90f2d82048d9/window HTTP/1.1" 200 12
+DEBUG: Finished Request

@@ -4,6 +4,13 @@ import re
 from gpu_bot.items import GpuBotItem
 from termcolor import colored
 from bs4 import BeautifulSoup
+import logging 
+
+logging.basicConfig(
+    filename='log.txt',
+    format='%(levelname)s: %(message)s',
+    level=logging.INFO
+)
 
 class stockCheckSpider(scrapy.Spider):
     name = 'stock_check'
@@ -17,18 +24,16 @@ class stockCheckSpider(scrapy.Spider):
         'FEED_EXPORT_ENCODING': 'utf-8',
     }
 
-    start_urls = ['https://www.gamestop.com/search/?q=3060&lang=default', 'https://www.gamestop.com/search/?q=3070&lang=default' ]
+    start_urls = ['https://www.gamestop.com/search/?q=3060&lang=default', 'https://www.gamestop.com/search/?q=3070&lang=default']
+
 
     def parse(self, response):
         sauce = BeautifulSoup(response.body, 'lxml')
-        print(sauce)
-        print(colored(sauce.find_all('div', class_='product-grid-tile-wrapper'),'red'))
         for gpu in sauce.find_all('div', class_='product-grid-tile-wrapper'):
             gpus = GpuBotItem()
 
             gpus['name'] = gpu.find(class_='pd-name').get_text()
-            gpus['available'] = gpu.find('div', class_='tile-body').get_text()
-            print(gpu.find('div', class_='sold-out-msg-11121603'))
+            gpus['available'] = gpu.find('div', {'data-available': 'false'}) is None           
             gpus['link'] = response.url
             
             if gpus['available'] == True:

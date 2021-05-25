@@ -8,6 +8,9 @@ import re
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--no-sandbox")
+options.add_argument('--no-proxy-server')
+options.add_argument("--proxy-server='direct://'")
+options.add_argument("--proxy-bypass-list=*")
 driver = SeleniumDriver(webdriver.Chrome(ChromeDriverManager().install(), options=options))
 
 start_urls = ['https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=rtx+3060+ti']
