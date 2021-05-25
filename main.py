@@ -1,22 +1,19 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
-from scrapy.utils.project import get_project_settings
 from termcolor import colored
-from gpu_bot.spiders.stock_check import stockCheckSpider 
-from bots.bestbuy import GetBestbuyStock
-import time
+from gpu_bot.spiders.stock_check import stockCheckSpider, bhCheckSpider 
+#from bots.bestbuy import GetBestbuyStock
 from bot_email.send_email import SendEmail
-import re
-import os 
 
 class BreakOut(Exception): pass
 
 def main():
-    process  = CrawlerProcess(get_project_settings())
+    process  = CrawlerProcess()
     process.crawl(stockCheckSpider)
+    process.crawl(bhCheckSpider)
     process.start()
 
-    gpus = GetBestbuyStock()
+    gpus = False #GetBestbuyStock()
 
     if bool(gpus):
         SendEmail(gpus)

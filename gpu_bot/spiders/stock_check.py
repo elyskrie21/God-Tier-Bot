@@ -4,13 +4,6 @@ import re
 from gpu_bot.items import GpuBotItem
 from termcolor import colored
 from bs4 import BeautifulSoup
-import logging 
-
-logging.basicConfig(
-    filename='log.txt',
-    format='%(levelname)s: %(message)s',
-    level=logging.INFO
-)
 
 class stockCheckSpider(scrapy.Spider):
     name = 'stock_check'
@@ -43,9 +36,8 @@ class stockCheckSpider(scrapy.Spider):
             if next_page is not None:
                 yield response.follow(next_page, self.parse)
 
-class bestbuyCheckSpider(scrapy.Spider):
+class bhCheckSpider(scrapy.Spider):
     name = 'bestboy_stock'
-    start_urls = ['https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=3070+rtx']
 
     custom_settings = {
         'FEED_URI': 'gpu_stock.json',
@@ -56,42 +48,28 @@ class bestbuyCheckSpider(scrapy.Spider):
         'FEED_EXPORT_ENCODING': 'utf-8',
     }
 
-    def __init__(self):
-        options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        self.driver = SeleniumDriver(webdriver.Chrome(
-            ChromeDriverManager().install(), options=options))
+    start_urls = ['https://www.bestbuy.com']
+
+    headers = {
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'en-US,en;q=0.9,fr;q=0.8', 
+        'cache-control': 'no-cache',
+        'pragma': 'no-cache',
+        'referer': 'https://www.google.com/',
+        'sec-fetch-mode': 'navigate',
+        'sec-fetch-site': 'cross-site', 
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    }
+
 
     def parse(self, response):
-        data = self.driver.get(response.url)
-        source = self.driver.getPageSource()
-        print(colored('now parsing data', 'blue'))
-        for gpu in Selector(source).css('.list-item'):
-            gpus = GpuBotItem()
-
-            gpus['name'] = gpu.css('.sku-header a::text').get()
-
-            print(colored(gpus, 'red'))
-            
-            yield gpus 
-
-            next_page = None
-            if next_page is not None:
-                yield response.follow(next_page, self.parse)
-
-    def parse_result(self, response):
-        print(colored(response.text, 'green'))
+        url = 'https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&st=xbox+series+x'
         
-        for gpu in response.css('.list-item'):
-            gpus = GpuBotItem()
+        yield scrapy.Request(url, callback=self.parse_api, headers = self.headers)
 
-            gpus['name'] = gpu.css('.sku-header a::text').get()
 
-            print(colored(gpus, 'red'))
-            
-            yield gpus 
+    def parse_api(self, response):
+        yield response.body
 
-            next_page = None
-            if next_page is not None:
-                yield response.follow(next_page, self.parse)
 
