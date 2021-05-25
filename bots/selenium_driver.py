@@ -137,3 +137,5 @@ class SeleniumDriver():
             self.log.info('Element did not appear on the web page')
             print_stack()
         return element
+    def close(self):
+        self.driver.close()

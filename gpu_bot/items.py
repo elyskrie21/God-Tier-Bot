@@ -12,3 +12,4 @@ class GpuBotItem(scrapy.Item):
     name = scrapy.Field()
     price = scrapy.Field()
     available = scrapy.Field()
+    link = scrapy.Field()

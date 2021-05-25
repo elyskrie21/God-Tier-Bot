@@ -3,9 +3,7 @@ from scrapy.selector import Selector
 import re
 from gpu_bot.items import GpuBotItem
 from termcolor import colored
-from bots.selenium_driver import SeleniumDriver
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
+from bs4 import BeautifulSoup
 
 class stockCheckSpider(scrapy.Spider):
     name = 'stock_check'
@@ -19,20 +17,22 @@ class stockCheckSpider(scrapy.Spider):
         'FEED_EXPORT_ENCODING': 'utf-8',
     }
 
-    start_urls = ['https://www.gamestop.com/search/?q=ps5&lang=default']
+    start_urls = ['https://www.gamestop.com/search/?q=3060&lang=default', 'https://www.gamestop.com/search/?q=3070&lang=default' ]
 
     def parse(self, response):
-        for gpu in response.css('.product-grid-tile-wrapper'):
+        sauce = BeautifulSoup(response.body, 'lxml')
+        print(sauce)
+        print(colored(sauce.find_all('div', class_='product-grid-tile-wrapper'),'red'))
+        for gpu in sauce.find_all('div', class_='product-grid-tile-wrapper'):
             gpus = GpuBotItem()
 
-            gpus['name'] = gpu.css('.pd-name::text').get()
-            gpus['price'] = re.sub('\D','',gpu.css('.actual-price::text').get())[:-2]
-            gpus['available'] =  'sold out' not in gpu.css('.store-availability-msg::attr(class)').get() 
+            gpus['name'] = gpu.find(class_='pd-name').get_text()
+            gpus['available'] = gpu.find('div', class_='tile-body').get_text()
+            print(gpu.find('div', class_='sold-out-msg-11121603'))
+            gpus['link'] = response.url
             
-            print(colored(gpus, 'green'))
-
             if gpus['available'] == True:
-                yield gpus
+                yield gpus 
 
             next_page = None
             if next_page is not None:
