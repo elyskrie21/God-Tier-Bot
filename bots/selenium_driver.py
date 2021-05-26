@@ -29,6 +29,7 @@ class SeleniumDriver():
     def getTitle(self): return self.driver.title
     def get(self, url): return self.driver.get(url)
     def getPageSource(self): return self.driver.page_source
+    def quit(self): self.driver.quit()
 
     def getByType(self, locatorType):
         locatorType = locatorType.lower()
